@@ -1,0 +1,228 @@
+
+html.js .init-hide{
+	display: none;
+}
+
+*{
+	#border: 1px dotted #333;
+	box-sizing: border-box;
+}
+html{
+	height: 100%;
+	width: 100%;
+}
+html, body{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url(/images/subtle_dots.png);
+	background-repeat: repeat;
+}
+aside{
+	float: left;
+	width: 20%;
+	margin: 5%;
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+header{
+	width: 100%;
+	padding-bottom: 10px;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+#main{
+	float: right;
+	width: 65%;
+	margin: 5%;
+	margin-left: 0;
+	#border: 1px solid #AAAAAA;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-size:0.8em;
+}
+#title{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.3em;
+	font-weight: 300;
+	#border-bottom: 1px dotted #777777;
+	margin-right: 20%;
+	padding-bottom:7px;
+}
+#neo{
+	color:#1D97CC;
+	padding-right: 1px;
+}
+#kode{
+	color: #E6990B;
+}
+h1{
+	margin: 0;
+	font-weight: 600;
+	font-size:1.5em;
+	margin-bottom: 15px;
+	float: left;
+}
+p{
+	margin: 0;
+}
+/*
+aside ul{
+	list-style-type:none;
+	margin:0;
+
+	padding:0;
+}*/
+aside a{
+	color: #106EAD;
+	text-decoration: none;
+}
+#toolbar input:hover{
+	border: 1px solid #0C95F0;
+}
+#toolbar input:focus{
+	width: 30%;
+	border: 1px solid #0C95F0;
+}
+#toolbar{
+	width: 100%;
+	float: right;
+}
+#toolbar input{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-appearance: none;
+	border: 1px solid gray;
+	padding: 5px;
+	outline: none !important;
+-webkit-transition: 0.5s ease;
+-moz-transition: 0.5s ease;
+-o-transition: 0.5s ease;
+-ms-transition: 0.5s ease;
+transition: 0.5s ease;
+	width: 20%;
+	float: right;
+}
+#toolbar img{
+	float: right;
+	height: 22px;
+	padding-right: 10px;
+}
+.tooltip {
+  position: absolute;
+  z-index: 1020;
+  display: block;
+  padding: 5px;
+  font-size: 11px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: visible;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+.tooltip.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.tooltip.top {
+  margin-top: -2px;
+}
+
+.tooltip.right {
+  margin-left: 2px;
+}
+
+.tooltip.bottom {
+  margin-top: 2px;
+}
+
+.tooltip.left {
+  margin-left: -2px;
+}
+
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-top: 5px solid #CCCCCC;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #000000;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #000000;
+  border-left: 5px solid transparent;
+}
+
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-right: 5px solid #000000;
+  border-bottom: 5px solid transparent;
+}
+
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  background-color: #CCCCCC;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+#colors{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#colors div{
+	width: 25%;
+	height: 20px;
+	float: left;
+}
